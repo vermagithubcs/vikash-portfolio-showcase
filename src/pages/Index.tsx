@@ -1,10 +1,10 @@
-
 import { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SocialLinks from "@/components/SocialLinks";
 import { Button } from "@/components/ui/button";
 import { CircleArrowDown, Briefcase, Mail, User } from "lucide-react";
+import Navbar from "@/components/Navbar";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -31,8 +31,8 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-blue-50">
-      {/* Hero Section */}
-      <main className="container mx-auto px-4 py-16">
+      <Navbar />
+      <main className="container mx-auto px-4 py-16" id="home">
         <div className="max-w-3xl mx-auto text-center hero-content">
           <h1 className="text-5xl font-bold mb-4 text-gray-800">Vikash</h1>
           <p className="text-xl text-gray-600 mb-6">
@@ -47,7 +47,6 @@ const Index = () => {
         </div>
       </main>
 
-      {/* About Section */}
       <section className="py-20 section bg-white/50" id="about">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
@@ -62,7 +61,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Works Section */}
       <section className="py-20 section bg-purple-50/50" id="works">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
@@ -84,7 +82,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Contact Section */}
       <section className="py-20 section bg-white/50" id="contact">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
